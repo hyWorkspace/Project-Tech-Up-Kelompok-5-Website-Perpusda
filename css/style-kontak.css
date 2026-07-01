@@ -321,7 +321,7 @@ footer::before{
 /* Kontak */
 
 .kontak {
-    padding: 60px 20px;
+    padding: 40px 20px;
 }
 
 .kontak-container {
@@ -432,6 +432,7 @@ footer::before{
     color: var(--text);
     background: var(--background);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
 }
 
 .kontak-form input:focus,
@@ -466,7 +467,7 @@ footer::before{
 /* Map Section */
 
 .kontak-map iframe {
-    margin-top: 40px;
+    margin-top: 15px;
     border-radius: 6px;
     height: 300px;
     overflow: hidden;
