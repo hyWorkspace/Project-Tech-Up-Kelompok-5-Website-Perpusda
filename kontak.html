@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perpusda</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-kontak.css">
 
     <!-- Icon -->
     <link
@@ -39,7 +39,64 @@
     </header>
 
     <!-- Konten -->
-    
+    <section class="kontak">
+        <div class="container">
+            <h1>Hubungi Kami</h1>
+            <div class="kontak-content">
+                <p>Jika Anda memiliki pertanyaan, kritik, saran, maupun ingin memperoleh
+            informasi mengenai layanan Perpustakaan Daerah Salatiga,
+            silakan menghubungi kami melalui kontak di bawah ini:</p>
+            <div class="kontak-wrapper">
+                <!-- Informasi Kontak -->
+                 <div class="kontak-info">
+                    <h2>Informasi Kontak</h2>   
+                <div class="kontak-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Jl. Adi Sucipto No.7, Kalicacing,
+                        Kecamatan Sidomukti, Kota Salatiga,
+                        Jawa Tengah 50724</p>
+                </div>
+                <div class="kontak-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>(0298) 326951</p>
+                </div>
+                <div class="kontak-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>dinpersip@salatiga.go.id</p>
+                </div>
+                <div class="kontak-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <ul>
+                        <li>Senin - Kamis: 08.00 - 17.00 WIB</li>
+                        <li>Jumat: 07.30 - 15.00 WIB</li>
+                        <li>Sabtu: 08.00 - 11.00 WIB</li>
+                        <li>Minggu: Libur</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Form Kontak -->
+            <div class="kontak-form">
+                <h2>Kirim Pesan</h2>
+                <form action="proses_kontak.php" method="POST">
+                    <input type="text" name="nama" placeholder="Nama" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="pesan" placeholder="Pesan" required></textarea>
+                    <button type="submit">Kirim</button>
+                </form>
+            </div>
+            <div class="kontak-map">
+                <h2>Lokasi Perpustakaan</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.281327557269!2d110.500933!3d-7.326503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7083d36d4d97e5%3A0x4bfcdd4f5a9d5c4d!2sDinas%20Perpustakaan%20dan%20Kearsipan%20Kota%20Salatiga!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"></iframe>
+                </iframe>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
