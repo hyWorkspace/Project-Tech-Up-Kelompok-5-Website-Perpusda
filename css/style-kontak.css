@@ -475,6 +475,9 @@ footer::before{
 }
 
 /* Responsive Design */
+
+/* Laptop and Tablet (max-width: 992px) */
+
 @media (max-width: 992px) {
     .kontak-wrapper {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -482,5 +485,49 @@ footer::before{
 
     .kontak-map iframe {
         grid-column: span 2;
+    }
+
+    .kontak h1 {
+        font-size: 2.2rem;
+    }
+
+    .kontak h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Tablet and Mobile (max-width: 768px) */
+
+@media (max-width: 768px) {
+    .kontak-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .kontak-map iframe {
+        grid-column: span 1;
+    }
+
+    .kontak h1 {
+        font-size: 1.8rem;
+    }
+
+    .kontak h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Mobile (max-width: 480px) */
+
+@media (max-width: 480px) {
+    .kontak {
+        padding: 40px 0 20px 0;
+    }
+
+    .kontak h1 {
+        font-size: 1.5rem;
+    }
+
+    .kontak h2 {
+        font-size: 1.1rem;
     }
 }

@@ -407,8 +407,9 @@ footer::before{
 
 .foto-gedung img{
     width: 100%;
-    height: 220px;
-    object-fit: cover;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -428,6 +429,31 @@ footer::before{
 }
 
 /* Responsive Design */
+
+/* Laptop and Tablet (max-width: 992px) */
+
+@media (max-width: 992px) {
+    .tentang h1 {
+        font-size: 2.2rem;
+    }
+
+    .tentang h2 {
+        font-size: 1.6rem;
+    }
+
+    .tentang h3 {
+        font-size: 1.3rem;
+    }
+
+    .tentang-content p,
+    .tujuan-perpustakaan p,
+    .jam-operasional p {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+}
+
+/* Tablet and Mobile (max-width: 768px) */
 
 @media (max-width: 768px) {
     .tentang h1 {
@@ -451,5 +477,29 @@ footer::before{
 
     .foto-gedung-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile (max-width: 480px) */
+
+@media (max-width: 480px) {
+    .tentang {
+        padding: 40px 0 20px 0;
+    }
+    
+    .tentang h1 {
+        font-size: 1.8rem;
+    }
+
+    .tentang h2 {
+        font-size: 1.3rem;
+    }
+
+    .tentang h3 {
+        font-size: 1.1rem;
+    }
+
+    .foto-gedung-grid {
+        grid-template-columns: 1fr;
     }
 }
