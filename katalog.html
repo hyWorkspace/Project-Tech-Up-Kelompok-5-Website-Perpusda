@@ -27,9 +27,8 @@
           <li><a href="katalog.html" class="active">Katalog Buku</a></li>
           <li><a href="layanan.html">Layanan</a></li>
           <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="login.html" class="login-btn">Login</a></li>
         </ul>
-
-        <a href="login.html" class="login-btn">Login</a>
 
         <button class="menu-toggle">
           <i class="fa-solid fa-bars"></i>
@@ -59,33 +58,34 @@
               class="catalog-search-input"
             />
           </div>
+          <div class="filter">
+            <select id="catalogCategoryFilter" class="catalog-filter">
+              <option value="">Semua Kategori</option>
+              <option value="Novel">Novel</option>
+              <option value="Sastra Indonesia">Sastra Indonesia</option>
+              <option value="Buku Anak">Buku Anak</option>
+              <option value="Matematika">Matematika</option>
+              <option value="Fisika">Fisika</option>
+              <option value="Kimia">Kimia</option>
+              <option value="Biologi">Biologi</option>
+              <option value="Teknologi">Teknologi</option>
+              <option value="Agama">Agama</option>
+              <option value="Sejarah Indonesia">Sejarah Indonesia</option>
+              <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+              <option value="Bahasa Inggris">Bahasa Inggris</option>
+              <option value="Bahasa Arab">Bahasa Arab</option>
+              <option value="Bahasa Jepang">Bahasa Jepang</option>
+              <option value="Bahasa Korea">Bahasa Korea</option>
+              <option value="Public Speaking">Public Speaking</option>
+              <option value="Self Improvement">Self Improvement</option>
+            </select>
 
-          <select id="catalogCategoryFilter" class="catalog-filter">
-            <option value="">Semua Kategori</option>
-            <option value="Novel">Novel</option>
-            <option value="Sastra Indonesia">Sastra Indonesia</option>
-            <option value="Buku Anak">Buku Anak</option>
-            <option value="Matematika">Matematika</option>
-            <option value="Fisika">Fisika</option>
-            <option value="Kimia">Kimia</option>
-            <option value="Biologi">Biologi</option>
-            <option value="Teknologi">Teknologi</option>
-            <option value="Agama">Agama</option>
-            <option value="Sejarah Indonesia">Sejarah Indonesia</option>
-            <option value="Bahasa Indonesia">Bahasa Indonesia</option>
-            <option value="Bahasa Inggris">Bahasa Inggris</option>
-            <option value="Bahasa Arab">Bahasa Arab</option>
-            <option value="Bahasa Jepang">Bahasa Jepang</option>
-            <option value="Bahasa Korea">Bahasa Korea</option>
-            <option value="Public Speaking">Public Speaking</option>
-            <option value="Self Improvement">Self Improvement</option>
-          </select>
-
-          <select id="catalogStatusFilter" class="catalog-filter">
-            <option value="">Semua Status</option>
-            <option value="Tersedia">Tersedia</option>
-            <option value="Dipinjam">Dipinjam</option>
-          </select>
+            <select id="catalogStatusFilter" class="catalog-filter">
+              <option value="">Semua Status</option>
+              <option value="Tersedia">Tersedia</option>
+              <option value="Dipinjam">Dipinjam</option>
+            </select>
+          </div>
         </div>
 
         <!-- Rak Buku -->
@@ -122,7 +122,10 @@
 
         <div class="footer-contact">
           <h4>Kontak</h4>
-          <p><i class="fa-solid fa-location-dot"></i> Jl. Adi Sucipto No.7, Kalicacing, Kecamatan Sidomukti, Kota Salatiga, Jawa Tengah 50724</p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Jl. Adi Sucipto No.7,
+            Kalicacing, Kecamatan Sidomukti, Kota Salatiga, Jawa Tengah 50724
+          </p>
           <p><i class="fa-solid fa-phone"></i> (0298) 326951</p>
           <p><i class="fa-solid fa-envelope"></i> dinpersip@salatiga.go.id</p>
         </div>
@@ -142,6 +145,7 @@
       <div class="footer-bottom">© 2026 Perpusda. All Rights Reserved.</div>
     </footer>
 
+    <script src="js/script.js"></script>
     <script src="js/data-buku.js"></script>
     <script src="js/script-katalog.js"></script>
   </body>

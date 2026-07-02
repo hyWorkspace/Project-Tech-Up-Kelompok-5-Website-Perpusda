@@ -135,7 +135,7 @@ header{
 
 /* Login Button */
 
-.login-btn{
+.nav-links .login-btn{
     background:linear-gradient(
         135deg,
         var(--primary),
@@ -388,8 +388,15 @@ footer::before{
     border-color:var(--secondary);
 }
 
+.filter{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
 .catalog-filter{
     min-width:170px;
+    height:52px;
     border:1px solid var(--border);
     border-radius:14px;
     padding:0 15px;
@@ -534,4 +541,158 @@ footer::before{
     align-items:center;
 
     font-size:.85rem;
+}
+
+/* =========================================
+   RESPONSIVE KATALOG PAGE
+========================================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  /* Grid buku */
+  .catalog-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .catalog-book img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer */
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  /* Navbar */
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+
+    gap: 20px;
+    display: none;
+
+    border-bottom: 1px solid var(--border);
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links .login-btn {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* Header katalog */
+  .catalog-header {
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .catalog-title {
+    font-size: 2rem;
+  }
+
+  .catalog-subtitle {
+    font-size: 1rem;
+  }
+
+  /* Search & Filter */
+  .catalog-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .catalog-filter {
+    flex: 1;
+    width: auto;
+  }
+
+  /* Buku grid */
+  .catalog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .catalog-book {
+    padding: 15px;
+  }
+
+  .catalog-book h3 {
+    font-size: 1rem;
+  }
+
+  .catalog-book p {
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .logo {
+    font-size: 1.2rem;
+  }
+  
+  .catalog-title {
+    font-size: 1.6rem;
+  }
+
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-book {
+    width: 100%;
+  }
+
+  .catalog-book img {
+    max-width: 200px;
+    margin: auto;
+    display: block;
+  }
 }
