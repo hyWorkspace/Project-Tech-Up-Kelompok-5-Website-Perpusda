@@ -564,6 +564,10 @@ footer::before{
         font-size: 1.1rem;
     }
 
+    .tentang-content p{
+        padding: 0px 40px;
+    }
+
     .foto-gedung {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
