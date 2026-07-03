@@ -595,6 +595,10 @@ footer::before{
         font-size: 1.1rem;
     }
 
+    .container {
+        padding: 0 40px;
+    }
+
     /* Footer */
   .footer-container {
     grid-template-columns: 1fr;
