@@ -140,9 +140,14 @@ header {
   transition: 0.3s;
 }
 
-.login-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(29, 53, 87, 0.2);
+.nav-links .login-btn::after{
+    display:none;
+}
+
+.nav-links .login-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:
+        0 12px 24px rgba(29,53,87,.2);
 }
 
 /* Mobile Button */
